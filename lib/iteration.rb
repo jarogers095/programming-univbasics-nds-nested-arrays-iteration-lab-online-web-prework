@@ -17,6 +17,16 @@ def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
+  highest = []
+  
+  src.each do |n|
+    if n[0] > n[1]
+      highest.push(n[0])
+    else
+      highest.push(n[1])
+    end
+  end
+  return highest
 end
 
 def total_even_pairs(src)
