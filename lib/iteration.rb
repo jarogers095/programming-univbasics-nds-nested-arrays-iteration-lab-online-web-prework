@@ -8,8 +8,9 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   food_array = []
   src.each do |n|
-    
-    
+    food_array.push("I love #{n[0]} and #{n[1]} on my pizza")
+  end
+  return food_array
 end
 
 def find_greater_pair(src)
